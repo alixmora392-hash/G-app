@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Awesome App</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-        .button { background: #007bff; color: white; padding: 15px 25px; text-decoration: none; border-radius: 5px; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App | Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Welcome to My App</h1>
-    <p>The best solution for your daily tasks.</p>
-    <br><br>
-    <a href="YOUR_STORE_LINK_HERE" class="button">Download Now</a>
+<body class="bg-gray-900 text-white font-sans">
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+            APP LOGO
+        </div>
+        <a href="#download" class="bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-full font-medium transition">Get Started</a>
+    </nav>
+
+    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+            The smartest way to <span class="text-blue-400">manage your apps.</span>
+        </h1>
+        <p class="text-gray-400 text-xl mb-10">
+            Streamline your workflow and boost productivity with our all-in-one platform. Simple, fast, and secure.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#" class="bg-white text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-200 transition">Download for iOS</a>
+            <a href="#" class="bg-gray-800 border border-gray-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-700 transition">Download for Android</a>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-12">
+        <div class="text-center">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-xl font-bold mb-2">Lightning Fast</h3>
+            <p class="text-gray-400">Optimized for performance so you never have to wait.</p>
+        </div>
+        <div class="text-center">
+            <div class="text-4xl mb-4">🛡️</div>
+            <h3 class="text-xl font-bold mb-2">Secure</h3>
+            <p class="text-gray-400">End-to-end encryption for all your private data.</p>
+        </div>
+        <div class="text-center">
+            <div class="text-4xl mb-4">🎨</div>
+            <h3 class="text-xl font-bold mb-2">Beautiful UI</h3>
+            <p class="text-gray-400">Designed with a focus on simplicity and ease of use.</p>
+        </div>
+    </section>
+
 </body>
 </html>
