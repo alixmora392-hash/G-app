@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Apps | RDM STUDIO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        /* High-end glow effect for the cards */
+        .app-card:hover {
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans selection:bg-blue-500">
+
+    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+            RDM STUDIO
+        </div>
+        <div class="flex gap-6 items-center">
+            <a href="index.html" class="text-gray-400 hover:text-white transition">Home</a>
+            <a href="#our-apps" class="hidden sm:block bg-blue-600 hover:bg-blue-500 px-5 py-2 rounded-full font-medium transition shadow-lg">Browse Store</a>
+        </div>
+    </nav>
+
+    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
+            Innovative tools for <span class="text-blue-400">your daily life.</span>
+        </h1>
+        <p class="text-gray-400 text-xl mb-10">
+            Explore my collection of mobile applications designed for speed, privacy, and simplicity.
+        </p>
+        <a href="#our-apps" class="text-blue-400 hover:text-blue-300 font-semibold flex items-center justify-center gap-2">
+            See all apps 
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </a>
+    </header>
+
+    <section id="our-apps" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-800">
+        <div class="mb-12 text-center md:text-left">
+            <h2 class="text-3xl font-bold mb-2">Explore Our Apps</h2>
+            <p class="text-gray-500">Available on iOS and Android</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="app-card bg-gray-800/40 p-6 rounded-3xl border border-gray-800 hover:border-blue-500 transition-all duration-300 group">
+                <div class="w-16 h-16 bg-blue-500 rounded-2xl mb-4 flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition">📱</div>
+                <h3 class="text-xl font-bold mb-2 text-white">App Name One</h3>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">A brief description of what this app does. Helping users solve a specific problem.</p>
+                <div class="flex gap-3">
+                    <a href="#" class="flex-1 text-center text-[10px] uppercase tracking-wider bg-white text-black font-black py-2.5 rounded-xl hover:bg-gray-200 transition">App Store</a>
+                    <a href="#" class="flex-1 text-center text-[10px] uppercase tracking-wider bg-gray-700 text-white font-black py-2.5 rounded-xl hover:bg-gray-600 transition">Play Store</a>
+                </div>
+            </div>
+
+            <div class="app-card bg-gray-800/40 p-6 rounded-3xl border border-gray-800 hover:border-emerald-500 transition-all duration-300 group">
+                <div class="w-16 h-16 bg-emerald-500 rounded-2xl mb-4 flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition">🎮</div>
+                <h3 class="text-xl font-bold mb-2 text-white">App Name Two</h3>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">Maybe this one is a game or a utility tool. It’s fast, lightweight, and very fun to use.</p>
+                <div class="flex gap-3">
+                    <a href="#" class="flex-1 text-center text-[10px] uppercase tracking-wider bg-white text-black font-black py-2.5 rounded-xl hover:bg-gray-200 transition">App Store</a>
+                    <a href="#" class="flex-1 text-center text-[10px] uppercase tracking-wider bg-gray-700 text-white font-black py-2.5 rounded-xl hover:bg-gray-600 transition">Play Store</a>
+                </div>
+            </div>
+
+            <div class="app-card bg-gray-800/40 p-6 rounded-3xl border border-gray-800 hover:border-purple-500 transition-all duration-300 group">
+                <div class="w-16 h-16 bg-purple-500 rounded-2xl mb-4 flex items-center justify-center text-3xl shadow-lg group-hover:scale-110 transition">📅</div>
+                <h3 class="text-xl font-bold mb-2 text-white">App Name Three</h3>
+                <p class="text-gray-400 text-sm mb-6 leading-relaxed">A productivity app to keep your schedule organized and your life on track.</p>
+                <div class="flex gap-3">
+                    <a href="#" class="flex-1 text-center text-[10px] uppercase tracking-wider bg-white text-black font-black py-2.5 rounded-xl hover:bg-gray-200 transition">App Store</a>
+                    <a href="#" class="flex-1 text-center text-[10px] uppercase tracking-wider bg-gray-700 text-white font-black py-2.5 rounded-xl hover:bg-gray-600 transition">Play Store</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="max-w-6xl mx-auto px-6 py-12 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6 text-gray-500 text-sm">
+        <p>&copy; 2026 RDM STUDIO. All rights reserved.</p>
+        <div class="flex gap-8 font-medium">
+            <a href="privacy.html" class="hover:text-blue-400 transition">Privacy Policy</a>
+            <a href="mailto:support@example.com" class="hover:text-blue-400 transition">Support</a>
+        </div>
+    </footer>
+
+</body>
+</html>
